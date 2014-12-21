@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 17, 2014, 2:38:59 PM
+    Author     : BrentB
+*/
+
+body{
+    background-color: #2a2a2a;
+}
+
+.classcontainer {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 500px;
+    height: 600px;
+    float: left;
+}
+
+#searchButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.classlist {
+    background-color: #BDBDBD;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 120px;
+    height: 150px;
+    outline: 1px solid;
+    float: left;
+    float: bottom;
+}
+
+#buttonContainer {
+    padding-left: 10px;
+    padding-top: 60px;
+    width: 120px;
+    height: 150px;
+    float: left;
+    float: bottom;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+    width: 800px;
+    height: auto;
+    background-color: #BDBDBD;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.searchContainer {
+    width: 1280px;
+    height: auto;
+    background-color: #2a2a2a;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultsContainer {
+    float: right;
+    width: 780px;
+    padding-top: 100px;
+    height: auto;
+}
+
+.resultsTable {
+    background-color: #BDBDBD;
+    padding: 15px;
+}
+
+
+#banner {
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+table, tr, th{
+    border: 1px #2a2a2a;
+}
+
+font {
+    font-family: sans-serif, arial,serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

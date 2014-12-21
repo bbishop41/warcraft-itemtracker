@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/obslootDB">
+  <Resource auth="Container" 
+  driverClassName="com.mysql.jdbc.Driver" 
+  maxActive="5" maxIdle="30" maxWait="100"
+  name="jdbc/obsidiumloot" 
+  password="ugadog" 
+  type="javax.sql.DataSource"
+  closeMethod="close"
+  url="jdbc:mysql://localhost:3306/obsidiumloot" 
+  username="root"/>
+</Context>
