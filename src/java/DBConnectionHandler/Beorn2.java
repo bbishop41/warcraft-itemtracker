@@ -9,6 +9,6 @@ package DBConnectionHandler;
  *
  * @author BrentB
  */
-public class Beorn {
-    DBConnect con;
+public class Beorn2 {
+    
 }
