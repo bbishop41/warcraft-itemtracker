@@ -10,5 +10,5 @@ package DBConnectionHandler;
  * @author BrentB
  */
 public class Beorn2 {
-    
+    String beorntest;
 }
