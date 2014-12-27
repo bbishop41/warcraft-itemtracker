@@ -19,13 +19,22 @@
                     "renamelinks": true }</script>
     </head>
     <body>
-        <div class="searchContainer">
+        <div class="contentContainer">   
         <%
             WarcraftClass classGen = new WarcraftClass();
             ArrayList<String> resultList = new ArrayList();
             ArrayList<ItemEntity> resultSearch = new ArrayList();
         %>
         <img src="images/banner.jpg" class="center" />
+        <div class="navBar">
+            <a href="index.jsp">Home</a> |
+            <a href="listitems.jsp">Loot History</a> |
+            <a href="searchMembers.jsp">View Loot by Member</a> |
+            <a href="adminCP.jsp">Admin Control Panel</a>
+            <div class="logout">
+                <a href="login.jsp">Login</a>
+            </div><br/><br/><br/>
+       </div>   
         <form action="searchLootByMember" method="post">
         <div class="classcontainer">
             <div class="classlist">

@@ -5,11 +5,14 @@
         <group>
             <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/src/java/MemberCharClasses/WarcraftClass.java</file>
             <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/css/stylesheet.css</file>
-            <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/images/banner.jpg</file>
             <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/searchMembers.jsp</file>
             <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/src/java/SearchHandlers/searchLootByMember.java</file>
+            <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/src/java/parseLoot/parseLoot.java</file>
             <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/index.jsp</file>
             <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/src/java/DBConnectionHandler/DBConnect.java</file>
+            <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/adminCP.jsp</file>
+            <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/BrentB/Documents/NetBeansProjects/obslootDB/web/listitems.jsp</file>
         </group>
     </open-files>
 </project-private>

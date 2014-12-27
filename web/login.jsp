@@ -1,23 +1,18 @@
 <%-- 
-    Document   : ListItems
-    Created on : Dec 14, 2014, 3:20:31 AM
+    Document   : login
+    Created on : Dec 27, 2014, 3:12:41 PM
     Author     : BrentB
 --%>
 
-<%@page import="DBConnectionHandler.DBConnect"%>
-<%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
-        <script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true,
-                    "renamelinks": true }</script>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <title>Loot History</title>
+        <title>Login</title>
     </head>
-    <body> 
+    <body>
         <div class="contentContainer">
             <img src="images/banner.jpg" class="center" />
             
@@ -30,6 +25,6 @@
                     <a href="login.jsp">Login</a>
                 </div><br/><br/><br/>
             </div>            
-        </div>  
+        </div> 
     </body>
 </html>

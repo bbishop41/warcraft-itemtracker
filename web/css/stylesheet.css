@@ -13,11 +13,30 @@ body{
 }
 
 .classcontainer {
-    padding-top: 100px;
+    padding-top: 30px;
     margin: 0 auto;
     width: 500px;
     height: 600px;
     float: left;
+}
+
+.logout {
+    float: right;   
+}
+
+.logsContainer {
+    float: right;
+    width: 300px;
+    height: 180px;
+    background-color: #BDBDBD;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.logsContainer iframe {
+    background-color: #2a2a2a;
 }
 
 #searchButton {
@@ -62,7 +81,14 @@ img.center {
     padding-left: 10px;
 }
 
-.searchContainer {
+.navBar {
+    width: 1260px;
+    height: 25px;
+    background-color: #BDBDBD;
+    padding:10px;  
+}
+
+.contentContainer {
     width: 1280px;
     height: auto;
     background-color: #2a2a2a;
@@ -74,7 +100,7 @@ img.center {
 .resultsContainer {
     float: right;
     width: 780px;
-    padding-top: 100px;
+    padding-top: 30px;
     height: auto;
 }
 
@@ -83,6 +109,18 @@ img.center {
     padding: 15px;
 }
 
+.textareaContainer {
+    float: left;
+    width: 600px;
+}
+
+.addmemberContainer {
+    float: right;
+    width: 600px;
+    height: 100px;
+    background-color: #BDBDBD;
+    padding: 20px;
+}
 
 #banner {
     float: none;

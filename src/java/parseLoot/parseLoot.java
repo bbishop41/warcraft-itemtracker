@@ -8,6 +8,7 @@ package parseLoot;
 import DBConnectionHandler.DBConnect;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.StringTokenizer;
@@ -30,8 +31,8 @@ public class parseLoot extends HttpServlet {
                 spec = "", bonusIdList = "";
         String[] lines = input.split("\\r?\\n");
         try{
-            DBConnect con = new DBConnect();
-            PreparedStatement ps;
+            Connection con = new DBConnect().getConnection();
+            PreparedStatement ps = null;
             for(int i = 0; i < lines.length; i++){
                 tokenize = new StringTokenizer(lines[i], "*");
                 while(tokenize.hasMoreTokens()){
@@ -41,10 +42,9 @@ public class parseLoot extends HttpServlet {
                     date = tokenize.nextToken();
                     spec = tokenize.nextToken();
                     bonusIdList = processBonusList(itemName, tokenize.nextToken());
-                }
-           
+                }         
                 String sql = "INSERT INTO looteditems (charName, itemName, itemID, dateLooted, spec, bonusIdList) VALUES (?,?,?,?,?,?)";
-                ps = con.getConnection().prepareStatement(sql);
+                ps = con.prepareStatement(sql);
                 ps.setString(1, charName);
                 ps.setString(2, itemName);
                 ps.setString(3, itemId);
@@ -53,12 +53,14 @@ public class parseLoot extends HttpServlet {
                 ps.setString(6, bonusIdList);
                 ps.executeUpdate();            
             }
+            ps.close();
+            con.close();
             response.sendRedirect("index.jsp");
             return;
         }catch(SQLException e){
             e.printStackTrace();
             response.sendRedirect("index.jsp");
-        } 
+        }
     }
     
     public static String processBonusList(String iname, String bonusid){

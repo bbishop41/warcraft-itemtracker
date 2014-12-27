@@ -8,6 +8,10 @@
         <servlet-name>searchLootByMember</servlet-name>
         <servlet-class>SearchHandlers.searchLootByMember</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>insertMember</servlet-name>
+        <servlet-class>MemberServlets.insertMember</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>parseLoot</servlet-name>
         <url-pattern>/parseLoot</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>searchLootByMember</servlet-name>
         <url-pattern>/searchLootByMember</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertMember</servlet-name>
+        <url-pattern>/insertMember</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
