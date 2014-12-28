@@ -12,6 +12,10 @@
         <servlet-name>insertMember</servlet-name>
         <servlet-class>MemberServlets.insertMember</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>processLogin</servlet-name>
+        <servlet-class>loginServlets.processLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>parseLoot</servlet-name>
         <url-pattern>/parseLoot</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>insertMember</servlet-name>
         <url-pattern>/insertMember</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>processLogin</servlet-name>
+        <url-pattern>/processLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

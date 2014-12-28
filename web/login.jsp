@@ -17,14 +17,30 @@
             <img src="images/banner.jpg" class="center" />
             
             <div class="navBar">
-                <a href="index.jsp">Home</a> |
-                <a href="listitems.jsp">Loot History</a> |
-                <a href="searchMembers.jsp">View Loot by Member</a> |
-                <a href="adminCP.jsp">Admin Control Panel</a>
-                <div class="logout">
-                    <a href="login.jsp">Login</a>
-                </div><br/><br/><br/>
-            </div>            
+            <a href="index.jsp">Home</a> |
+            <a href="listitems.jsp">Loot History</a> |
+            <a href="searchMembers.jsp">View Loot by Member</a> |
+            <a href="adminCP.jsp">Admin Control Panel</a>           
+       </div>  
+          
+            <br/><br/>
+            <div class="loginContainer">
+                <%
+                String login = (String) session.getAttribute("loggedIn");
+                if (login != null){%>
+                    <br/> Logged in as: <%= login%> <br/><br/>
+                    <form action="processLogin" method="post">
+                        <input type="submit" name="logout" value="Logout">
+                    </form>   
+                <%}else{%>
+                    <form action="processLogin" method="post">
+                        Username: <input type="text" name="username"><br/><br/>
+                        Password: <input type="password" name="password"><br/><br/>
+                        <input type="submit" value="Login">
+                    </form>
+                <br/> Not currently logged in.
+                <%}%>
+            </div>
         </div> 
     </body>
 </html>

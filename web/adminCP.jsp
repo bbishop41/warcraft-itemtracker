@@ -16,6 +16,13 @@
                     "renamelinks": true }</script>
     </head>
     <body>
+        
+        <%
+            String login = (String) session.getAttribute("loggedIn");
+            if (login == null){
+                response.sendRedirect("login.jsp");
+            }  
+        %>
         <div class="contentContainer">
             <img src="images/banner.jpg" class="center" />
             
