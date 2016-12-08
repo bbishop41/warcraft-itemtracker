@@ -1,146 +1,77 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Dec 17, 2014, 2:38:59 PM
-    Author     : BrentB
-*/
-
-body{
-    background-color: #2a2a2a;
+.classGrid {
+	margin-top:10px;
+        background-color: #cccccc;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+	border: #cdcdcd medium solid;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }
 
-.classcontainer {
-    padding-top: 30px;
-    margin: 0 auto;
-    width: 500px;
-    height: 600px;
-    float: left;
-}
-
-.logout {
-    float: right;   
-}
-
-.logsContainer {
-    float: right;
-    width: 300px;
-    height: 180px;
-    background-color: #BDBDBD;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+.classCell {
     padding-top: 10px;
-}
-
-.logsContainer iframe {
-    background-color: #2a2a2a;
-}
-
-#searchButton {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.classlist {
-    background-color: #BDBDBD;
-    padding-left: 10px;
-    padding-top: 10px;
-    width: 120px;
-    height: 150px;
-    outline: 1px solid;
-    float: left;
-    float: bottom;
-}
-
-.loginContainer {
-    background-color: #BDBDBD;
-    float: left;
-    width: 270px;
-    height: 100px;
-    padding: 40px;
-}
-
-#buttonContainer {
-    padding-left: 10px;
-    padding-top: 60px;
-    width: 120px;
-    height: 150px;
-    float: left;
-    float: bottom;
-}
-
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content {
-    width: 800px;
-    height: auto;
-    background-color: #BDBDBD;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-}
-
-.navBar {
-    width: 1260px;
-    height: 25px;
-    background-color: #BDBDBD;
-    padding:10px;  
-}
-
-.contentContainer {
-    width: 1280px;
-    height: auto;
-    background-color: #2a2a2a;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.resultsContainer {
-    float: right;
-    width: 780px;
-    padding-top: 30px;
-    height: auto;
 }
 
 .resultsTable {
-    background-color: #BDBDBD;
-    padding: 15px;
+    padding-top: 20px;
 }
 
-.textareaContainer {
-    float: left;
-    width: 600px;
+.homeRightContainer{
+    padding-left: 30px;
 }
 
-.addmemberContainer {
-    float: right;
-    width: 600px;
-    height: 100px;
-    background-color: #BDBDBD;
-    padding: 20px;
+.logsContainer {
+    width: 300px;
+    height: 180px;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
-#banner {
-    float: none;
-    margin: 0 auto;
-    display: block;
+.adminButtonGroup {
+    padding-top: 30px;
 }
 
-table, tr, th{
-    border: 1px #2a2a2a;
+.loginbutton {
+    padding-bottom: 3px;
 }
 
-font {
-    font-family: sans-serif, arial,serif;
+.submit-button {
+    padding-left: 20px;
+}
+
+.red {
+    background-color: #ff9900;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.centered { 
+    margin: auto;
+    max-width: 1000px;
+}
+
+.containerGray {
+    background-color: #cccccc;
+}
+font {   
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.col-fixed{
+    height: 150px;
+    overflow: auto;
+    margin-top:10px;
+        background-color: #cccccc;
+        margin-left: 10px;
+        padding-left: 10px;
+	border: #cdcdcd medium solid;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }

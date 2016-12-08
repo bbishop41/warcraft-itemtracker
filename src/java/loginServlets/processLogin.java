@@ -20,7 +20,7 @@ public class processLogin extends HttpServlet {
         HttpSession session = request.getSession();
 
         if(username != null && password != null){
-            if (username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("pmenacenotbad")){
+            if (username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("ugadog")){
                 session.setAttribute("loggedIn", username);
             }else{
                 session.setAttribute("loggedIn", null);
@@ -28,6 +28,6 @@ public class processLogin extends HttpServlet {
         }else{
             session.setAttribute("loggedIn", null);
         }
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("adminCP.jsp");
      }
 }

@@ -23,7 +23,7 @@ public class DBConnect {
     public DBConnect() throws SQLException{
         try{
             Context ctx = new InitialContext();
-            ds = (DataSource) ctx.lookup("java:comp/env/jdbc/MySQLDS");
+            ds = (DataSource) ctx.lookup("java:comp/env/jdbc/obsidiumloot");
             con = ds.getConnection();
             
         }catch (NamingException e){

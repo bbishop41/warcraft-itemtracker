@@ -43,7 +43,7 @@ public class parseLoot extends HttpServlet {
                     spec = tokenize.nextToken();
                     bonusIdList = processBonusList(itemName, tokenize.nextToken());
                 }         
-                String sql = "INSERT INTO looteditems (charName, itemName, itemID, dateLooted, spec, bonusIdList) VALUES (?,?,?,?,?,?)";
+                String sql = "INSERT INTO looteditems (charName, itemName, itemID, dateTimeLooted, spec, bonusIdList) VALUES (?,?,?,?,?,?)";
                 ps = con.prepareStatement(sql);
                 ps.setString(1, charName);
                 ps.setString(2, itemName);

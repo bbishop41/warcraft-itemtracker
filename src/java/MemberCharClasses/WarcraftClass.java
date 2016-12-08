@@ -28,7 +28,7 @@ public class WarcraftClass {
     public ArrayList<String> getClassMembers(String className) throws SQLException{
         try{
             con = new DBConnect().getConnection();
-            String sql = "SELECT * FROM members WHERE className = ?";
+            String sql = "SELECT * FROM members WHERE className = ? AND isApproved = 1";
             ps = con.prepareStatement(sql);
             ps.setString(1, className);
             rs = ps.executeQuery();

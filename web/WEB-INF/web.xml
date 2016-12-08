@@ -16,6 +16,18 @@
         <servlet-name>processLogin</servlet-name>
         <servlet-class>loginServlets.processLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>searchLootByString</servlet-name>
+        <servlet-class>SearchHandlers.searchLootByString</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteMember</servlet-name>
+        <servlet-class>MemberServlets.deleteMember</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteItems</servlet-name>
+        <servlet-class>ItemServlets.deleteItems</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>parseLoot</servlet-name>
         <url-pattern>/parseLoot</url-pattern>
@@ -31,6 +43,18 @@
     <servlet-mapping>
         <servlet-name>processLogin</servlet-name>
         <url-pattern>/processLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>searchLootByString</servlet-name>
+        <url-pattern>/searchLootByString</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteMember</servlet-name>
+        <url-pattern>/deleteMember</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteItems</servlet-name>
+        <url-pattern>/deleteItems</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
